@@ -249,3 +249,8 @@ variable "db_subnet_group_name" {
   type        = string
   default     = ""
 }
+
+variable "predefined_metric_type" {
+  description = "The metric type to scale on. Valid values are RDSReaderAverageCPUUtilization and RDSReaderAverageDatabaseConnections."
+  default     = "RDSReaderAverageCPUUtilization"
+}

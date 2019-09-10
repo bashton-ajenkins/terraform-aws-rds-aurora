@@ -96,6 +96,7 @@ Terraform documentation is generated automatically using [pre-commit hooks](http
 | performance\_insights\_enabled | Specifies whether Performance Insights is enabled or not. | bool | `"false"` | no |
 | performance\_insights\_kms\_key\_id | The ARN for the KMS key to encrypt Performance Insights data. | string | `""` | no |
 | port | The port on which to accept connections | string | `""` | no |
+| predefined_metric_type | The metric type to scale on. Valid values are RDSReaderAverageCPUUtilization and RDSReaderAverageDatabaseConnections. | string | `"RDSReaderAverageCPUUtilization"` | no |
 | preferred\_backup\_window | When to perform DB backups | string | `"02:00-03:00"` | no |
 | preferred\_maintenance\_window | When to perform DB maintenance | string | `"sun:05:00-sun:06:00"` | no |
 | publicly\_accessible | Whether the DB should have a public IP address | bool | `"false"` | no |

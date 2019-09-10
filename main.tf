@@ -131,7 +131,7 @@ resource "aws_appautoscaling_policy" "autoscaling_read_replica_count" {
 
   target_tracking_scaling_policy_configuration {
     predefined_metric_specification {
-      predefined_metric_type = "RDSReaderAverageCPUUtilization"
+      predefined_metric_type = var.predefined_metric_type
     }
 
     scale_in_cooldown  = var.replica_scale_in_cooldown
